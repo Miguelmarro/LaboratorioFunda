@@ -1,22 +1,21 @@
-# incluye " iostream "
-usando el  espacio de nombres  estándar ;
+#include "iostream"
+using namespace std;
 
-int  main ()
-
+int main ()
 {
 
-    float radio ;
-float área de = 3.1416 ;
-float perimetro = 2 * 3.1416 ;
+ int num;
 
-cout << " área y perímetro de un círculo " << endl << endl;
-cout << " Ingresar el radio del circulo: " << endl;
-cin >> radio; 
-cout << " El área del circulo es: " << endl;
-cout << area * radio * radio << endl << endl;
-cout << " El circulo tiene un perimetro de: " << endl;
-cout << perimetro * radio;
+cout <<"Colocar numero para saber si es para o impar" << endl;
+cin >> num;
 
-return  0 ;
+ if (num % 2==0)
+{
+    cout << num << "Es numero par";
+    } else{
+    cout << num << "Es numero impar";
+} 
+
+ return 0;
 
 }

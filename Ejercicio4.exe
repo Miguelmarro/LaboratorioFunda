@@ -1,22 +1,31 @@
-#include "iostream"
+#include<iostream>
+#include<string.h>
+
 using namespace std;
 
-int main ()
-{
-    string Producto;
-    float Precio;
-    float Cantidad;
+int main(){
+ 
+ int longitud;
+ string palabra;
+ 
+ 
+ cout << "Ingresar palabra para verificar si posee 10 caracteres y si es par o impar." << endl;
+ cin >> palabra;
+longitud = palabra.size();   
 
-cout <<"Ingresar el producto a comprar: " <<endl;
-    cin>> Producto; cout <<endl;
-    cout <<"Ingresar la cantidad que quiere comprar: "<<endl;
-    cin >> Cantidad; cout <<endl;
-    cout <<"Ingresar el precio del producto: "<<endl;
-    cin >> Precio; cout <<endl;
-    float Total = Precio * Cantidad; cout <<endl;
-    cout <<"Total: " <<endl;
-    cout << "Producto: " << Producto <<"  Cantidad: " <<Cantidad <<"  Total: " <<"$ " <<Total;
-          
-    return 0;
+
+if (longitud >=10){
+    cout << "La palabra tiene 10 caracteres" << endl;
+}else{
+        cout << "La palabra tiene menos de 10 caracteres"<< endl;
+}
+
+if (longitud%2== 0){
+        cout << "La longitud es par" << endl;
+    }else{
+        cout << "La longitud es impar" << endl;
+    }
+
+return 0;
 
 }

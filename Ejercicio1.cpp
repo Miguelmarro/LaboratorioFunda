@@ -1,24 +1,23 @@
-# include  < iostream >
+#include "iostream"
+using namespace std;
 
-usando el  espacio de nombres  estándar ;
-
-int  main () 
+int main ()
 {
 
-    int numero1;
-    int numero2;
-    int numero3;
+int x;
+int y;
+cout << "Colocar los numeros para saber si son divisibles entre ellos: " << endl;
+cout << "Ingresar primer numero: ";
+cin >> x;
+cout << "Ingresar segundo numero: ";
+cin >> y;
 
-    cout << " Ingresar el primer número " << endl;
-    cin >> numero1;
-    cout << " Ingresar el segundo número " << endl;
-    cin >> numero2;
-    cout << " Ingresar el tercer número " << endl;
-    cin >> numero3;
+if (x%y==0){
+    cout<< "Son divisibles.";
+} else
+{
+    cout << "No son divisibles";
+}
 
-    cout << endl << endl;
-    int promedio = (numero1 + numero2 + numero3) / ( 3 );
-    cout << " El promedio de los tres números es: " << promedio << endl;
-    
-    return  0;
+return 0;
 }

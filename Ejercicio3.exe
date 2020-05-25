@@ -1,25 +1,24 @@
-#include "iostream"
-#include "math.h"
+#include <iostream>
+
 using namespace std;
 
-int main ()
+int main()
 {
+    int num;
 
-    float a;
-    float b;
-    float c;
+    cout << endl;
+    cout << "verifique si un número es positivo, negativo o cero" << endl << endl;
+    cout << "Ingresar el número" << endl;
+    cin >> num;
 
-    cout << "Ingresar el termino a:" << endl;
-    cin >> a;
-    cout << "Ingresar el termino b:" << endl;
-    cin >> b;
-    cout <<  "Ingresar el termino c:" << endl;
-    cin >> c;
-
-    //float discriminante = (pow(b,2)) - (4*a*c);
-    float formula1 = (-b + (sqrt((pow(b,2) - (4*a*c)))))/(2*a);
-    float formula2 = (-b - (sqrt((pow(b,2) - (4*a*c)))))/(2*a);
-    cout << "Los valores de x son: " << formula1 << " y " << formula2;
-
-    return 0;
+    if (num < 0){
+        cout << "El número " << num << "es negativo";
+    }
+    else if (num == 0){
+        cout << "El número es" << num;
+    }
+    else{
+        cout << "El número es positivo";
+    }
+    
 }
